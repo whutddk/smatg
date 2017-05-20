@@ -29,14 +29,11 @@ int main()
 	//update data
 //
 
-//
-	//check attack mode
-	//check sd space
-	//check other space
+
 //
 	itac_init();
 //OLED_TEST();
-	OLED_WORK();
+//OLED_WORK();
 
 
 	cam_init();
@@ -73,21 +70,7 @@ int main()
 			{
 				if ( ctl.flag_mode != digitalRead(DIPS2) )
 				{ break;}
-				rec();
-				
-
-			}
-		}
-		else
-		{
-			digital(13 ,14, 11 ,10);
-			learn_init();
-			bz_ready();
-			while(1)
-			{
-				if ( ctl.flag_mode != digitalRead(DIPS2) )
-				{ break;}
-				learn();
+				shot();
 			}
 		}
 

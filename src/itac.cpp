@@ -7,13 +7,6 @@ void itac_init()
 {
 	wiringPiSetup();
 
-//OLED
-	pinMode(3,OUTPUT);
-	pinMode(5,OUTPUT);
-
-	pullUpDnControl(3,PUD_UP);
-	pullUpDnControl(5,PUD_UP);
-
 //KEY
 	pinMode(LK,INPUT);
 	pinMode(RK,INPUT);

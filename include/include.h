@@ -56,28 +56,6 @@ extern void rec();
 extern void learn();
 extern void get_systime(char *systime);
 
-extern void I2C_start(void);
-extern void I2C_stop(void);
-extern uint8 I2Ccheck_ACK(void);
-extern void I2CSendByte(uint8 ch);
-
-extern void OLED_WORK();
-extern void OLED_TEST();
-extern void OLED_init();				   
-extern void Write_IIC_Command(uint8  IIC_Command);
-extern void Write_IIC_Data(uint8 IIC_Data);
-extern void fill_picture(uint8 fill_Data);
-extern void OLED_Set_Pos(uint8 x, uint8 y);
-extern void OLED_Display_On(void);
-extern void OLED_Display_Off(void);
-extern void OLED_Clear(void);
-extern void OLED_On(void);
-extern void OLED_ShowChar(uint8 x,uint8 y,uint8 chr,uint8 Char_Size);
-extern uint32 oled_pow(uint8 m,uint8 n);
-extern void OLED_DrawBMP(uint8 x0, uint8 y0,uint8 x1, uint8 y1,uint8 BMP[]);
-extern void OLED_ShowString(uint8 x,uint8 y,uint8 *chr,uint8 Char_Size);
-extern void OLED_ShowNum(uint8 x,uint8 y,uint32 num,uint8 len,uint8 size2);
-extern void OLED_Rectangle(uint8 x1,uint8 y1,uint8 x2,uint8 y2);
-extern void OLED_PutPixel(uint8 x,uint8 y);
+extern void shot();
 #endif
 
