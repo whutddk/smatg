@@ -36,7 +36,8 @@ void cam_init()
 	{
 		cout << "done!" << endl;
 		cap.set(CV_CAP_PROP_FRAME_WIDTH,640);
-		//cap.set(CV_CAP_PROP_FRAME_HEIGHT,320);	
+		cap.set(CV_CAP_PROP_FRAME_HEIGHT,480);	
+cout << "out_set"<<endl;
 	}
 }
 
