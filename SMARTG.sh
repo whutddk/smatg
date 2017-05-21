@@ -1,2 +1,3 @@
 #!/bin/sh
-nohup sudo /work/project/SMARTG/main &
+cd /work/smatg
+nohup /work/smatg/main &
